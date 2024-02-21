@@ -1,1 +1,57 @@
-body{background-color:blueviolet;}
+body{background-color:#8e48d0;
+font-family: Arial, Helvetica, sans-serif;}
+a{color:#2b163f;}
+.container{
+    margin: 120px auto;
+    max-width: 600px;}
+h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.5;
+    color:black;}
+    
+    
+form{
+        padding: 20px;
+        background-color:#de34d9;
+        display:flex;
+        border-radius: 5px;
+    }
+    
+
+.instructions{
+    
+    border-radius: 25px;
+    padding: 20px;
+    border: 1px;
+    width:80%;
+    font-size: 16px;
+    line-height:15px;
+    color:rgb(8, 8, 8);
+
+}
+.submit-btn{
+    border-radius: 25px;
+    border:none;
+    font-size: 20px;
+    margin-left:20px;
+    width:120px;
+    background:#e3dce9;
+    color:black;
+    padding: 15px 15px;
+}
+.poem{
+    margin-top: 20px;
+    border-left: 3px solid #ffff;
+    font-size: 20px;
+    color:#c9c9c9;
+    background-color: #de34d9;
+    padding:10px;
+    line-height:2;
+}
+footer{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
