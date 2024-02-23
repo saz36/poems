@@ -13,9 +13,13 @@ event.preventDefault();
 
 let inputInstructions= document.querySelector("#input-user");
 let apiKey = `ccedafe30c0o08ea49bb7fb493t06576`;
-let prompt =`Generate a poem about ${inputInstructions.value}`;
-let context = "be kind and polite give maximum 10 lines and seperate with <br />";
+let prompt =`user instructions: Generate a poem about ${inputInstructions.value}`;
+let context = "be kind and polite give maximum 5 lines and seperate with <br />";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+let poemElement = document.querySelector("#poem");
+poemElement.classList.remove("hidden");
+poemElement.innerHTML = `<div class = "blink"> Generating poem about ${inputInstructions.value}</div>`;
 console.log("poem start");
 console.log(`prompt: ${prompt}`)
 console.log(`prompt: ${context}`)

@@ -11,12 +11,13 @@ h1{
     line-height: 1.5;
     color:black;}
     
+.form-container{    
+    border-radius: 5px;
+    padding: 20px;
+    background-color:#de34d9;}
     
 form{
-        padding: 20px;
-        background-color:#de34d9;
         display:flex;
-        border-radius: 5px;
     }
     
 
@@ -42,7 +43,7 @@ form{
     padding: 15px 15px;
 }
 .poem{
-    margin-top: 20px;
+    margin-top: 30px;
     border-left: 3px solid #ffff;
     font-size: 20px;
     color:#c9c9c9;
@@ -50,8 +51,28 @@ form{
     padding:10px;
     line-height:2;
 }
+
+
+
+.hidden {
+    display:none;
+}
 footer{
     text-align: center;
     font-size: 15px;
     margin-top: 20px;
 }
+.blink {
+    animation: blink-animation 1s steps(3, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
